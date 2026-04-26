@@ -1,0 +1,23 @@
+# Environment files
+.env
+*.local
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Health data (user's personal data should not be committed)
+# health/
+
+# Temporary files
+*.tmp
+*.log
+
+# Cron job outputs (may contain sensitive data)
+# cron/

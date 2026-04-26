@@ -1,0 +1,21 @@
+# 健康助手 Profile 配置
+# 基础配置，默认继承全局配置
+
+# 模型配置（可选覆盖）
+# model: anthropic/claude-sonnet-4
+
+# 记忆限制
+memory:
+  limits:
+    memory: 2200   # MEMORY.md 字符限制
+    user: 1375     # USER.md 字符限制
+
+# Context 文件路径
+context_files:
+  soul: ~/.hermes/profiles/health-assistant/SOUL.md
+  memory: ~/.hermes/profiles/health-assistant/memories/MEMORY.md
+  user: ~/.hermes/profiles/health-assistant/memories/USER.md
+
+# 健康数据目录（可选，用于指定数据存储路径）
+health:
+  data_dir: ~/.hermes/health
