@@ -47,7 +47,7 @@
 ### 一键安装
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/你的用户名/hermes-health-assistant/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/zhiwehu/hermes-health-assistant/main/install.sh | bash
 ```
 
 ### 手动安装
@@ -60,7 +60,7 @@ hermes profile create health-assistant
 cd ~/.hermes/profiles/health-assistant
 
 # 3. 克隆本仓库
-git clone https://github.com/你的用户名/hermes-health-assistant.git temp
+git clone https://github.com/zhiwehu/hermes-health-assistant.git temp
 cp temp/profile/* ./
 rm -rf temp
 
