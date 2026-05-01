@@ -114,6 +114,22 @@ chmod +x install.sh
 ### 医疗免责声明
 ⚠️ 本助手提供的所有建议仅供参考，**不构成医疗诊断或治疗建议**。如有健康问题，请咨询专业医生。
 
+### 📦 数据备份与迁移
+**你的数据完全属于你！** 我们提供两种脚本，方便你随时备份：
+
+1. **全量备份** (`scripts/backup_profile.sh`)：
+   - 备份整个 Hermes Profile（包含记忆、技能、Wiki、Cron 任务配置）。
+   - 适合换机迁移或全面灾难恢复。
+   - 执行：`bash scripts/backup_profile.sh`
+
+2. **健康数据增量备份** (`scripts/backup_health.sh`)：
+   - 仅备份健康数据目录 (`wiki/health/`)。
+   - 适合配置定时任务（如 Cron）每天/每周自动执行。
+   - 执行：`bash scripts/backup_health.sh`
+
+**如何迁移到新电脑？**
+只需将备份的压缩文件或 `health/` 目录解压到新 Hermes 的对应位置，Agent 即可无缝恢复所有记忆和历史数据。
+
 ### 隐私与安全
 - ✅ 所有数据存储在本地，零云端同步
 - ✅ 不上传任何健康数据到第三方
